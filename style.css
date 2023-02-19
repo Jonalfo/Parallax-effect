@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh; 
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin: 20px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background: #ffff;
+    color: #200016;
+} 
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#200016,transparent);
+}
+.main img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+} 
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+.Traveling{
+    color: #ffff;
+    font-size: 25x;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+.contend{
+    color: #ffff;
+    padding: 30px;
+
+}
+.contend h2{
+    margin: 20px;
+    font-size: 20px;
+}
+.contend p{
+    margin: 20px;
+    font-size: 20px;
+}
